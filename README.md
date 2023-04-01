@@ -4,3 +4,5 @@
 [![Build and Test Package](https://github.com/nexys-system/swifts3-client/actions/workflows/test.yml/badge.svg)](https://github.com/nexys-system/swifts3-client/actions/workflows/test.yml)
 [![Publish](https://github.com/nexys-system/swifts3-client/actions/workflows/publish.yml/badge.svg)](https://github.com/nexys-system/swifts3-client/actions/workflows/publish.yml)
 ![Code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
+
+Only tested with [Infomaniak Public cloud (OpenStack)](https://www.infomaniak.com/en/hosting/public-cloud)
