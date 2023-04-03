@@ -3,6 +3,7 @@
   "version": "0.0.6",
   "private": false,
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "node ./dist/index.js",
     "test": "rm -rf dist;jest",
@@ -28,10 +29,10 @@
     "node-fetch": "^3.3.1"
   },
   "devDependencies": {
-    "@types/jest": "^29.0.0",
+    "@types/jest": "^29.5.0",
     "@types/node": "^18.15.11",
-    "jest": "^29.0.2",
-    "ts-jest": "^28.0.8",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
     "typescript": "^5.0.3"
   }
 }
