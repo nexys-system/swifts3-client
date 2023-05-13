@@ -80,7 +80,7 @@ class SwiftFileStorage {
     return this.uploadFile(filename, body);
   }
 
-  async uploadFile(filename: string, body: Buffer): Promise<Boolean> {
+  async uploadFile(filename: string, body: Buffer): Promise<boolean> {
     const url = this.url + "/" + filename;
 
     const response = await this.request({
