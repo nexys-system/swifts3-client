@@ -1,7 +1,7 @@
 import fs from "fs";
 import fetch, { Response } from "node-fetch";
-import Identity from "./identity.js";
-import { readFileToBuffer } from "./utils.js";
+import Identity from "./identity";
+import { readFileToBuffer } from "./utils";
 
 class SwiftFileStorage {
   url: string;
