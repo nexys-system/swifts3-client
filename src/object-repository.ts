@@ -1,5 +1,3 @@
-import fs from "fs";
-import fetch, { Response } from "node-fetch";
 import Identity from "./identity";
 import { readFileToBuffer } from "./utils";
 
@@ -100,7 +98,7 @@ class SwiftFileStorage {
     return response.ok;
   }
 
-  async downloadFile(filename: string) {
+  /*async downloadFile(filename: string) {
     const url = this.url + "/" + filename;
 
     const response = await this.request({ url });
@@ -120,7 +118,7 @@ class SwiftFileStorage {
     fileStream.on("finish", () => {
       console.log(`File downloaded to ${localPath}`);
     });
-  }
+  }*/
 
   async deleteFile(filename: string) {
     const url = this.url + "/" + filename;
@@ -148,9 +146,9 @@ class SwiftFileStorage {
     return response.text();
   }
 
-  async serve(filename: string): Promise<Buffer> {
+  async serve(filename: string): Promise<ArrayBuffer> {
     const response = await this.serveResponse(filename);
-    return response.buffer();
+    return response.arrayBuffer();
   }
 }
 
