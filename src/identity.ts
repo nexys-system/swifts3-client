@@ -1,12 +1,11 @@
 import fetch from 'node-fetch';
-
-type Auth = any;
+import { SwiftAuth } from "./type";
 
 class Authentication {
   urlPrefix: string;
-  auth: Auth;
+  auth: {auth:SwiftAuth};
 
-  constructor(urlPrefix: string, auth: Auth) {
+  constructor(urlPrefix: string, auth: {auth:SwiftAuth}) {
     this.urlPrefix = urlPrefix;
     this.auth = auth;
   }
